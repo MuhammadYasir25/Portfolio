@@ -643,3 +643,37 @@ footer {
         height: 270px;
     }
 }
+
+/* --- Large Screen Scaling --- */
+@media (min-width: 1440px) {
+    .nav-content, .hero, section:not(.hero) {
+        max-width: 1536px;
+    }
+    
+    .name {
+        font-size: 5.5rem;
+    }
+    
+    .role {
+        font-size: 2.5rem;
+    }
+    
+    .summary {
+        font-size: 1.25rem;
+        max-width: 650px;
+    }
+    
+    .profile-container {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .profile-img {
+        width: 440px;
+        height: 440px;
+    }
+    
+    .section-header h2 {
+        font-size: 3.5rem;
+    }
+}
