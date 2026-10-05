@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
 
 // --- Scroll Reveal Animations ---
 function revealElements() {
-    const reveals = document.querySelectorAll('.reveal, .reveal-right');
+    const reveals = document.querySelectorAll('.reveal, .reveal-right, .reveal-left');
 
     for (let i = 0; i < reveals.length; i++) {
         const windowHeight = window.innerHeight;

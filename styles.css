@@ -571,20 +571,30 @@ footer {
 /* --- Animations & Utilities --- */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 
 .reveal-right {
     opacity: 0;
-    transform: translateX(40px);
-    transition: all 0.8s ease;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 
-.reveal.active, .reveal-right.active {
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active, .reveal-right.active, .reveal-left.active {
     opacity: 1;
     transform: translate(0);
 }
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
 
 /* --- Responsive Design --- */
 @media (max-width: 992px) {
